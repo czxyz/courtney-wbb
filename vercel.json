@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "public",
+  "headers": [
+    { "source": "/cal/(.*)", "headers": [ { "key": "Content-Type", "value": "text/calendar; charset=utf-8" }, { "key": "Cache-Control", "value": "public, max-age=3600" } ] }
+  ]
+}
